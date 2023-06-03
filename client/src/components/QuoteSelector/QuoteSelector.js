@@ -97,7 +97,7 @@ function QuoteSelector(props) {
   };
 
   useEffect(() => {
-    socket = new WebSocket(process.env.REACT_APP_WEBSOCKET_URI);
+    socket = new WebSocket('wss://d7rrbwnynf.execute-api.us-east-1.amazonaws.com/Prod');
 
     socket.onopen = () => {
       props.handleEndLoading();
